@@ -1,0 +1,20 @@
+Naming/VariableNumber:
+  Exclude:
+    - 'config/routes.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'config/initializers/assets.rb'
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'config/environments/**/*'
+    - 'node_modules/**/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+    - 'app/controllers/wrap/**/*'
+  TargetRubyVersion: 2.7
